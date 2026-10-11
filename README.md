@@ -13,7 +13,7 @@ Finally in the evaluvate.py file the predictions of the model was compared again
 From the F1 scores we can infer that the model tends to perform well in the full region in the rainy condition than in the sunny and the night conditions.
 
 #### 2) Point Cloud Visualization:
-For this project I used the Redwood RGB-D samples provided by Open3D library. I used the in-built function provided by Open3D which is o3d.geometry.PointCloud.create_from_depth_image() to convert the depth images to point clouds by passing the raw_depth image directory and the intrinsic parameters of the camera.
+For this project I used the Redwood RGB-D samples provided by Open3D library. I used the in-built function provided by Open3D which is o3d.geometry.PointCloud.create_from_depth_image() to convert the depth images to point clouds by passing the raw_depth image directory and the intrinsic parameters of the camera to the function.
 I also performed a transformation of the output to get the correct orientation. Followed by this did the outlier removal, down sampling and coloring the regions based on proximity.
    
 
