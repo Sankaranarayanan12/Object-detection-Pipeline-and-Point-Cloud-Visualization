@@ -5,7 +5,7 @@ This project helped me get familiar with the visual stack for both 2-D and 3-D i
 
 #### 1) Object detection pipeline:
 For this project I used the UA-DETRAC dataset which contains recorded videos of road traffic under different scenarios and I picked 3 different scenarios Sunny, Night and Rainy conditions.
-First I started by picking ROI(Region of Interest) by letting the user choose a custom region from the image and taking those points for detection of objects(using OpenCV) done in the pick_roi.py file then I used the pretrained YOLOV8 model trained for object detection on the COCO classes to detect Car, motorcycle, bus and truck that fall inside
+First I started by picking ROI(Region of Interest) by letting the user choose a custom region from the image and taking those points for detection of objects done in the pick_roi.py file then I used the pretrained YOLOV8 model trained for object detection on the COCO classes to detect Car, motorcycle, bus and truck that fall inside
 the ROI region by using the pointPolygonTest offered by OpenCV and accordingly coloring the detected boxes green and rest of the detections gray implemented in the detect.py file.
 Finally in the evaluvate.py file the predictions of the model was compared against the annotated XML files to get the average precision,precision,recall,F1 scores, inference time for both the ROI region and the full region. 
 ##### Result:
